@@ -1,0 +1,15 @@
+#Wallpaper {
+  position: fixed;
+	width: 0px;
+	height: 0px;
+	background-color: #000000;
+
+}
+
+#canc {
+	z-index: 100;
+	position: fixed;
+	font-size: 25;
+	color: #4E4E4E;
+	right: 20px;
+}
