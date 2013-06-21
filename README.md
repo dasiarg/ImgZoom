@@ -6,7 +6,7 @@ A simple Javascript function which allows to open an image in widescreen
 
 ========
 
-You will just need to:
+You will just need to: <br>
 1- Include wall.js in your HTML document
 2- Add style.css to your HTML document (or put its content into your css file)
 3- Add this element in your HTML document:
