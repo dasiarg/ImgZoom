@@ -1,7 +1,7 @@
 ImgZoom
 =======
 
-A simple Javascript function which allows to open an image in widescreen
+A simple and lightweight Javascript function which allows to open an image in widescreen
 
 
 ========
