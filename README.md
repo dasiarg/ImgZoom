@@ -12,4 +12,6 @@ You will just need to: <br>
 3- Add a div element with "Wallpaper" as id (possibly at the beginning of the body) <br>
 4- Set the onClick attribute to the images you want to open: onClick="extend(this)"  <br>
 
+An example is provided at the page http://twentyone.altervista.org/examples/ImgZoom.html
+
 
