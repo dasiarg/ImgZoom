@@ -1,5 +1,9 @@
+html, body {
+	height: 100%;
+}
+
 #Wallpaper {
-  position: fixed;
+        position: fixed;
 	width: 0px;
 	height: 0px;
 	background-color: #000000;
