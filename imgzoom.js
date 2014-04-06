@@ -7,7 +7,7 @@ function quit() {
 }
 
 
-function extend(small) {
+function extend(link) {
     var x = Math.max (window.innerWidth,document.body.clientWidth,document.documentElement.clientWidth);
         y = Math.max (window.innerHeight, document.body.clientHeight,document.documentElement.clientHeight);
         div = document.getElementById("Wallpaper"),
@@ -18,7 +18,7 @@ function extend(small) {
     div.style.top = "0px";
     div.style.left = "0px";
     
-    img.src = small.src;
+    img.src = link;
     img.id = "img";
     
     //Resizing and centering the image
@@ -47,9 +47,7 @@ function extend(small) {
     canc.innerHTML= "x";
     canc.id= "canc";
     canc.onclick= function () { quit() };
-    div.insertBefore(canc);
-
-       
+    div.insertBefore(canc);       
 }
 
 document.addEventListener('keydown', function (event) { //close img with ESC button
