@@ -22,7 +22,7 @@ function extend(link) {
     img.id = "img";
     
     //Resizing and centering the image
-    setTimeout(function() {        
+    img.onload= function() {        
         if (img.width < x && img.height < y) {
             img.style.marginLeft= (x - img.width)/2 + "px";
             img.style.marginTop= (y - img.height)/2 + "px";
@@ -38,9 +38,9 @@ function extend(link) {
             img.height = y-30;
             img.style.marginTop= "15px";
             img.style.marginLeft= Math.abs((x - newWidth))/2 + "px";
-        }        
-        div.appendChild(img); 
-    },50);
+        } 
+        div.appendChild(img);
+    }
     
     //creating the X icon
     var canc= document.createElement("div");
