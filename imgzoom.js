@@ -47,7 +47,7 @@ function extend(link) {
     canc.innerHTML= "x";
     canc.id= "canc";
     canc.onclick= function () { quit() };
-    div.insertBefore(canc);       
+    div.insertBefore(canc, null);       
 }
 
 document.addEventListener('keydown', function (event) { //close img with ESC button
