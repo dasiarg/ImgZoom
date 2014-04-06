@@ -3,17 +3,19 @@ html, body {
 }
 
 #Wallpaper {
-        position: fixed;
+    position: fixed;
 	width: 0px;
 	height: 0px;
 	background-color: #000000;
-
 }
 
 #canc {
 	z-index: 100;
 	position: fixed;
-	font-size: 25;
-	color: #4E4E4E;
-	right: 20px;
+	font-size: 20px;
+    font-weight: 500;
+	color: #ccc;
+	right: 10px;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #000;
 }
