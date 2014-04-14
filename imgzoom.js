@@ -1,18 +1,21 @@
 function quit() {
-    var div = document.getElementById("Wallpaper");
+    var div = document.getElementById("imgzoom");
     div.removeChild(document.getElementById("img"));  //delete img node element
     div.removeChild(document.getElementById("canc"));  //delete canc node element
-    div.style.width = 0;  //hide div
-    div.style.height = 0;
+    document.body.removeChild(div);
 }
 
 
 function extend(link) {
-    var x = Math.max (window.innerWidth,document.body.clientWidth,document.documentElement.clientWidth);
-        y = Math.max (window.innerHeight, document.body.clientHeight,document.documentElement.clientHeight);
-        div = document.getElementById("Wallpaper"),
+    var x = Math.max(window.innerWidth, document.body.clientWidth, document.documentElement.clientWidth),
+        y = Math.max(window.innerHeight, document.body.clientHeight, document.documentElement.clientHeight),
+        div = document.createElement("div"),
         img = document.createElement("img");
     
+    div.id="imgzoom";
+    div.style.position= "fixed";
+    div.style.backgroundColor="#000";
+    document.body.insertBefore(div);
     div.style.width = "100%";
     div.style.height = "100%";
     div.style.top = "0px";
@@ -44,10 +47,23 @@ function extend(link) {
     
     //creating the X icon
     var canc= document.createElement("div");
+    canc.style.zIndex= "100";
+    canc.style.position= "fixed";
+    canc.style.fontSize= "1.25em";
+    canc.style.color= "#ccc";
+    canc.style.right= "1em";
+    canc.style.top= "0.5em";
+    canc.style.cursor= "pointer";
+    canc.style.textShadow= "0px 0px 5px #000";
     canc.innerHTML= "x";
     canc.id= "canc";
     canc.onclick= function () { quit() };
     div.insertBefore(canc, null);       
+    
+
+    //font-weight: 500;
+
+
 }
 
 document.addEventListener('keydown', function (event) { //close img with ESC button
