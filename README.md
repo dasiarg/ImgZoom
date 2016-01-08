@@ -1,17 +1,17 @@
 ImgZoom
 =======
 
-A simple and lightweight Javascript function which allows to open an image in widescreen
+A simple and lightweight Javascript function which allows to open an image in widescreen with an overlay
 
 
 ========
 
 You will just need to: <br>
 1- Include imgzoom.js in your HTML document <br>
-2- Set the onClick attribute to the images you want to open: onClick="extend(this.src)"  <br>
+2- Include JQuery
+3- call .imgZoom() on the image you want to open in widescreen  <br>
 
-If you want to open a different image (e.g. a bigger image) use onclick="extend('path/to/file.jpg')";
+It is also possible to open a specific image with .imgZoom('path/to/file')
 
-An example is provided at the page http://twentyone.github.io/imgzoom.html (take a look of the source)
+I will add features and link a demo ASAP
 
-ImgZoom doesn't use Jquery, so you won't need to include it
