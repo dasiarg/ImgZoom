@@ -13,5 +13,7 @@ You will just need to: <br>
 
 It is also possible to open a specific image with .imgZoom('path/to/file')
 
-I will add features and link a demo ASAP
+Here is a super simple demo: https://gbalduzzi.github.com/ImgZoom
+
+I will add features ASAP
 
